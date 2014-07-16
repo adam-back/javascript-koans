@@ -77,12 +77,14 @@ describe("About Arrays", function() {
   it("should push and pop", function () {
     var array = [1, 2];
     array.push(3);
+    //push onto end
 
-    expect(array).toEqual(FILL_ME_IN);
+    expect(array).toEqual([1, 2, 3]);
     
     var poppedValue = array.pop();
-    expect(poppedValue).toBe(FILL_ME_IN);
-    expect(array).toEqual(FILL_ME_IN);
+    //pop off of end, return (not as array element)
+    expect(poppedValue).toBe(3);
+    expect(array).toEqual([1, 2]);
   });
 
   it("should know about shifting arrays", function () {
