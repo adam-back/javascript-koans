@@ -23,13 +23,13 @@ describe("About Arrays", function() {
     expect(array).toEqual([1]);
     
     array[1] = 2;
-    expect(array).toEqual([1, FILL_ME_IN]);
+    expect(array).toEqual([1, 2]);
     
     array.push(3);
-    expect(array).toEqual(FILL_ME_IN);
+    expect(array).toEqual([1, 2, 3]);
   });
 
-  it("should understand array length", function () {
+  3("should understand array length", function () {
     var fourNumberArray = [1, 2, 3, 4];
 
     expect(fourNumberArray.length).toBe(FILL_ME_IN);
