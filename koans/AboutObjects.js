@@ -31,7 +31,8 @@ describe("About Objects", function () {
     };
    
     var battleCry = meglomaniac.battleCry(4);
-    expect(FILL_ME_IN).toMatch(battleCry);
+    expect("They are Pinky and the Brain Brain Brain Brain Brain").toMatch(battleCry);
+    //What shall we do tonight Brain?
   });
 
   it("should confirm that when a function is attached to an object, 'this' refers to the object", function () {
@@ -46,8 +47,8 @@ describe("About Objects", function () {
       }
     };
    
-    expect(currentYear).toBe(FILL_ME_IN);
-    expect(meglomaniac.calculateAge()).toBe(FILL_ME_IN);
+    expect(currentYear).toBe(2014);
+    expect(meglomaniac.calculateAge()).toBe(44);
   });
 
   describe("'in' keyword", function () {
@@ -64,14 +65,15 @@ describe("About Objects", function () {
 
       var hasBomb = "theBomb" in meglomaniac;
      
-      expect(hasBomb).toBe(FILL_ME_IN);
+      expect(hasBomb).toBe(true);
     });
 
     it("should not have the detonator however", function () {
 
       var hasDetonator = "theDetonator" in meglomaniac;
      
-      expect(hasDetonator).toBe(FILL_ME_IN);
+      expect(hasDetonator).toBe(false);
+      //Why false? hasDetonator does not exist in meglomanic.
     });    
   });
 
